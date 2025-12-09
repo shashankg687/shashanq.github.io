@@ -7,9 +7,9 @@ redirect_from:
   - /markdown.html
 ---
 
-{% include toc %}
+<!-- {% include toc %} -->
 
-# Qurious Labs - Current Job Openings
+<!-- # Qurious Labs - Current Job Openings -->
 
 **Last Updated:** December 9, 2025
 

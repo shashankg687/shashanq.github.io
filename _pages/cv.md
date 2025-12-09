@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-# Latest News: Quantum Computing, QNu Labs & Dr. Shashank Gupta
+<!-- # Latest News: Quantum Computing, QNu Labs & Dr. Shashank Gupta -->
 
 **Last Updated:** December 9, 2025
 
@@ -35,7 +35,6 @@ Dr. Gupta brings industry-backed quantum cryptography expertise to academia, pos
 
 **Source:** LinkedIn Post - Dr. Shashank Gupta -->
 
----
 
 ## 📰 QNu Labs Recent Developments
 
