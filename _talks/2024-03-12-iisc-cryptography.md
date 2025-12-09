@@ -8,7 +8,7 @@ date: 2024-03-12
 location: "IISc, Bengaluru, India"
 ---
 
-**Abstract**
+<!-- **Abstract** -->
 
 This workshop presentation covers the validation and certification of cryptographic algorithms in the quantum era, discussing standardization processes, security testing, and real-world implementation considerations for quantum communication systems.
 

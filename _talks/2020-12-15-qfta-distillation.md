@@ -8,7 +8,7 @@ date: 2020-12-15
 location: "Online"
 ---
 
-**Abstract**
+<!-- **Abstract** -->
 
 Poster presentation on novel distillation protocols for genuine tripartite EPR steering from mixed quantum states. This work demonstrates methods to enhance steering in degraded quantum systems.
 

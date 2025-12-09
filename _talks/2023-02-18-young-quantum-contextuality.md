@@ -8,7 +8,7 @@ date: 2023-02-18
 location: "HRI, Prayagraj, India"
 ---
 
-**Abstract**
+<!-- **Abstract** -->
 
 This talk explores the intersection of quantum contextuality and device-independent quantum information, with particular focus on building secure quantum networks that don't require full device characterization. We demonstrate how contextual correlations can be certified and utilized for secure communication.
 

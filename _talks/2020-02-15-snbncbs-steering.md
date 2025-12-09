@@ -8,7 +8,7 @@ date: 2020-02-15
 location: "Kolkata, India"
 ---
 
-**Abstract**
+<!-- **Abstract** -->
 
 Internal presentation at my doctoral institution demonstrating the power of sharp logical contradictions in proving tripartite quantum steering. A novel all-versus-nothing proof of genuine tripartite steering using deterministic correlations.
 

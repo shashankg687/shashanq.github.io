@@ -8,7 +8,7 @@ date: 2020-09-20
 location: "Online"
 ---
 
-**Abstract**
+<!-- **Abstract** -->
 
 International poster presentation on tripartite steering distillation at the Young Italian Quantum Information Science conference, part of the growing effort to connect young researchers across Europe and Asia working on quantum information.
 

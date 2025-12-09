@@ -8,7 +8,7 @@ date: 2025-09-15
 location: "Reva University, Bengaluru, India"
 ---
 
-**Abstract**
+<!-- **Abstract** -->
 
 This lecture explores emerging applications of quantum machine learning for detecting AI-generated deepfake content. We discuss quantum algorithms for feature extraction and classification, and their potential advantages over classical approaches for security applications in healthcare.
 

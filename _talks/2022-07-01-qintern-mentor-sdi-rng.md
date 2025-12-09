@@ -8,7 +8,7 @@ date: 2022-07-01
 location: "Virtual"
 ---
 
-**Abstract**
+<!-- **Abstract** -->
 
 As a mentor in QWorld's QIntern program, I guided an undergraduate student through a research project on semi-device-independent (SDI) approaches to continuous-variable quantum random number generation (QRNG). The project explored practical methods to certify randomness without assuming full device characterization.
 

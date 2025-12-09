@@ -8,7 +8,7 @@ date: 2024-12-20
 location: "GBU, Noida, India"
 ---
 
-**Abstract**
+<!-- **Abstract** -->
 
 ChaQra is a cellular quantum network unit designed as a building block for the Indian quantum network infrastructure. This workshop presentation outlines the motivation, technical design, and deployment strategy for establishing quantum-secure communication across India.
 

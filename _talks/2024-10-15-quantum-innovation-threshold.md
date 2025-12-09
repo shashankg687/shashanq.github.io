@@ -8,7 +8,7 @@ date: 2024-10-15
 location: "Tokyo, Japan"
 ---
 
-**Abstract**
+<!-- **Abstract** -->
 
 We present a novel quantum distillation protocol utilizing threshold measurements on quantum states. The Threshold (Q, P) Quantum Distillation protocol achieves improved resource efficiency compared to conventional distillation methods, with direct applications to quantum networks, quantum repeaters, and quantum state engineering.
 

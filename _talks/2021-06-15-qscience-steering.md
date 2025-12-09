@@ -8,7 +8,7 @@ date: 2021-06-15
 location: "Online"
 ---
 
-**Abstract**
+<!-- **Abstract** -->
 
 This talk investigates how genuine tripartite EPR steering can be shared sequentially among multiple observers, revealing fundamental limits and possibilities in multipartite quantum correlations.
 

@@ -8,7 +8,7 @@ date: 2023-03-31
 location: "IITD, Delhi, India"
 ---
 
-**Abstract**
+<!-- **Abstract** -->
 
 This seminar establishes the fundamental connection between quantum contextuality, communication complexity advantages, and secure quantum networks. We show how contextual quantum correlations can be harnessed to achieve network security properties impossible classically.
 

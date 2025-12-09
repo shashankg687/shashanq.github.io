@@ -8,7 +8,7 @@ date: 2024-12-15
 location: "Mumbai, India"
 ---
 
-**Abstract**
+<!-- **Abstract** -->
 
 ChaQra represents a cellular quantum network architecture designed for the Indian quantum network infrastructure. This presentation outlines the design philosophy, technical specifications, and deployment roadmap for establishing secure, scalable quantum communication networks across India. We discuss how ChaQra units can be interconnected to form a unified quantum-secure Indian subcontinent.
 

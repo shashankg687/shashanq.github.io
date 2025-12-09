@@ -8,7 +8,7 @@ date: 2020-06-20
 location: "Online"
 ---
 
-**Abstract**
+<!-- **Abstract** -->
 
 Poster presentation at the premier TQC conference, presenting the counterintuitive result that non-Markovian memory effects in quantum channels can constructively enhance quantum resources.
 

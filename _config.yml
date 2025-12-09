@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "air" # Currently available options are "default", "air"
-title                    : "Homepage"
+title                    : "Qurious Labs"
 title_separator          : "-"
 name                     : &name ""
 description              : &description "Personal Description"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -25,7 +25,7 @@ author:
   # Biographic information
   avatar           : "sha_iiti.png"
   name             : "Dr. Shashank Gupta"
-  pronouns         : "he/him"  
+  # pronouns         : "he/him"  
   bio              : "Faculty at IIT-Indore | Ex-Research Lead at QNu Labs | Ex-postdoc at OIST, Japan"
   location         : "Indore, India"
   employer         : "IIT Indore"

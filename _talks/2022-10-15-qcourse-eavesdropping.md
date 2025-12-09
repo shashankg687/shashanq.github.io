@@ -8,7 +8,7 @@ date: 2022-10-15
 location: "Online"
 ---
 
-**Abstract**
+<!-- **Abstract** -->
 
 This lecture presents novel eavesdropping strategies against quantum key distribution networks using sequential unsharp measurements. We discuss how eavesdroppers can exploit measurement imprecision and quantum mechanics to extract secret information, and propose countermeasures.
 

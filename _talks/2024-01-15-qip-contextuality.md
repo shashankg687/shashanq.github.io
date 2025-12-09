@@ -8,7 +8,7 @@ date: 2024-01-15
 location: "Taipei, Taiwan"
 ---
 
-**Abstract**
+<!-- **Abstract** -->
 
 This presentation demonstrates the fundamental connection between quantum contextuality and communication complexity, establishing that contextual correlations can be exploited to achieve communication advantages impossible classically. This result has profound implications for quantum networks and quantum information theory.
 

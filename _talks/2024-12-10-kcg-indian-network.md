@@ -8,7 +8,7 @@ date: 2024-12-10
 location: "KCG College, Chennai, India"
 ---
 
-**Abstract**
+<!-- **Abstract** -->
 
 This presentation discusses the vision and technical roadmap for establishing a secure quantum communication network across India, with emphasis on enabling multi-party quantum computation over distributed quantum networks.
 

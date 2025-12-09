@@ -8,7 +8,7 @@ date: 2023-05-20
 location: "Singapore"
 ---
 
-**Abstract**
+<!-- **Abstract** -->
 
 ARMOS 2.0 is a production-grade quantum key distribution system developed at QuNu Labs with robust countermeasures against photon-number-splitting (PNS) attacks. This presentation describes the system architecture, security features, and practical deployment experience from real-world quantum communication deployments.
 
