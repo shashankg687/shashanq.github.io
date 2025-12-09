@@ -1,6 +1,6 @@
 ---
 permalink: /markdown/
-title: "Markdown"
+title: "Current Openings"
 author_profile: true
 redirect_from: 
   - /md/
@@ -9,448 +9,569 @@ redirect_from:
 
 {% include toc %}
 
-## Locations of key files/directories
+# Qurious Labs - Current Job Openings
 
-* Basic config options: _config.yml
-* Top navigation bar config: _data/navigation.yml
-* Single pages: _pages/
-* Collections of pages are .md or .html files in:
-  * _publications/
-  * _portfolio/
-  * _posts/
-  * _teaching/
-  * _talks/
-* Footer: _includes/footer.html
-* Static files (like PDFs): /files/
-* Profile image (can set in _config.yml): images/profile.png
+**Last Updated:** December 9, 2025
 
-## Tips and hints
-
-* Name a file ".md" to have it render in markdown, name it ".html" to render in HTML.
-* Go to the [commit list](https://github.com/academicpages/academicpages.github.io/commits/master) (on your repo) to find the last version GitHub built with Jekyll. 
-  * Green check: successful build
-  * Orange circle: building
-  * Red X: error
-  * No icon: not built
-
-* Academic Pages uses [Jekyll Kramdown](https://jekyllrb.com/docs/configuration/markdown/), GitHub Flavored Markdown (GFM) parser, which is similar to the version of Markdown used on GitHub, but may have some minor differences. 
-  * Some of emoji supported on GitHub should be supposed via the [Jemoji](https://github.com/jekyll/jemoji) plugin :computer:.
-  * The best list of the supported emoji can be found in the [Emojis for Jekyll via Jemoji](https://www.fabriziomusacchio.com/blog/2021-08-16-emojis_for_Jekyll/#computer) blog post.
-
-* While GitHub Pages prevents server side code from running, client-side scripts are supported.
-  * This means that Google Analytics is supported, and [the wiki](https://github.com/academicpages/academicpages.github.io/wiki/Adding-Google-Analytics) should contain the most up-to-date information on getting it working.
-
-* Your CV can be written using either Markdown ([preview](https://academicpages.github.io/cv/)) or generated via JSON ([preview](https://academicpages.github.io/cv-json/)) and the layouts are slightly different. You can update the path to the one being used in `_data/navigation.yml` with the JSON formatted CV being hidden by default.
-
- * The [Liquid syntax guide](https://shopify.github.io/liquid/tags/control-flow/) is a useful guide for those that want to add functionality to the template or to become contributors to the [template on GitHub](https://github.com/academicpages/academicpages.github.io).
-
-## MathJax 
-
-Support for MathJax (version 3.* via [jsDelivr](https://www.jsdelivr.com/), [documentation](https://docs.mathjax.org/en/latest/)) is included in the template:
-
-$$
-\displaylines{
-\nabla \cdot E= \frac{\rho}{\epsilon_0} \\\
-\nabla \cdot B=0 \\\
-\nabla \times E= -\partial_tB \\\
-\nabla \times B  = \mu_0 \left(J + \varepsilon_0 \partial_t E \right)
-}
-$$
-
-The default delimiters of `$$...$$` and `\\[...\\]` are supported for displayed mathematics, while `\\(...\\)` should be used for in-line mathematics (ex., \\(a^2 + b^2 = c^2\\))
-
-**Note** that since Academic Pages uses Markdown which cases some interference with MathJax and LaTeX for escaping characters and new lines, although [some workarounds exist](https://math.codidact.com/posts/278763/278772#answer-278772). In some cases, such as when you are including MathJax in a `citation` field for publications, it may be necessary to use `\(...\)` for inline delineation.
-
-## Mermaid diagrams
-Academic Pages includes support for [Mermaid diagrams](https://mermaid.js.org/) (version 11.* via [jsDelivr](https://www.jsdelivr.com/)) and in addition to their [tutorials](https://mermaid.js.org/ecosystem/tutorials.html) and [GitHub documentation](https://github.com/mermaid-js/mermaid) the basic syntax is as follows:
-
-```markdown
-    ```mermaid
-    graph LR
-    A-->B
-    ```
-```
-
-Which produces the following plot with the [default theme](https://mermaid.js.org/config/theming.html) applied:
-
-```mermaid
-graph LR
-A-->B
-```
-
-While a more advanced plot with the `forest` theme applied looks like the following:
-
-```mermaid
 ---
-config:
-  theme: 'forest'
+
+## About Qurious Labs
+
+**Qurious Labs** (Quantum Research in Information, Optimization and Unconditional Security) is an academic research group at **Indian Institute of Technology Indore**, led by **Dr. Shashank Gupta**. We are actively building a vibrant research community focused on quantum information science, quantum cryptography, and quantum networks.
+
+**Research Focus Areas:**
+- Quantum information theory and quantum correlations
+- Quantum key distribution and cryptography
+- Quantum networks and multi-party computation
+- Continuous-variable quantum systems
+- Post-quantum cryptography
+- Quantum optimization and simulation
+
 ---
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
-## Plotly
-Academic Pages includes support for Plotly diagrams via a hook in the Markdown code elements, although those that are comfortable with HTML and JavaScript can also access it [via those routes](https://plotly.com/javascript/getting-started/). Plotly is included via an `npm` [package](https://www.npmjs.com/package/plotly.js?activeTab=readme) and is distributed as part of the minimized JavaScript that is part of the template.
-
-In order to render a Plotly plot via Markdown the relevant plot data need to be added as follows:
-
-```markdown
-    ```plotly
-    {
-      "data": [
-        {
-          "x": [1, 2, 3, 4],
-          "y": [10, 15, 13, 17],
-          "type": "scatter"
-        },
-        {
-          "x": [1, 2, 3, 4],
-          "y": [16, 5, 11, 9],
-          "type": "scatter"
-        }
-      ]
-    }
-    ```
-```
-
-**Important!** Since the data is parsed as JSON *all* of the keys will need to be quoted for the plot to render. The use of a tool like [JSONLint](https://jsonlint.com/) to check syntax is highly recommended.
-{: .notice}
-
-Which produces the following:
-```plotly
-{
-  "data": [
-    {
-      "x": [1, 2, 3, 4],
-      "y": [10, 15, 13, 17],
-      "type": "scatter"
-    },
-    {
-      "x": [1, 2, 3, 4],
-      "y": [16, 5, 11, 9],
-      "type": "scatter"
-    }
-  ]
-}
-```
-
-Essentially what is taking place is that the [Plotly attributes](https://plotly.com/javascript/reference/index/) are being taken from the code block as JSON data, parsed, and passed to Plotly along with a theme that matches the current site theme (i.e., a light theme, or a dark theme). This allows all plots that can be described via the `data` attribute to rendered with some limitations for the theme of the plot.
-
-```plotly
-{
-  "data": [
-    {
-      "x": [1, 2, 3, 4, 5],
-      "y": [1, 6, 3, 6, 1],
-      "mode": "markers",
-      "type": "scatter",
-      "name": "Team A",
-      "text": ["A-1", "A-2", "A-3", "A-4", "A-5"],
-      "marker": { "size": 12 }
-    },
-    {
-      "x": [1.5, 2.5, 3.5, 4.5, 5.5],
-      "y": [4, 1, 7, 1, 4],
-      "mode": "markers",
-      "type": "scatter",
-      "name": "Team B",
-      "text": ["B-a", "B-b", "B-c", "B-d", "B-e"],
-      "marker": { "size": 12 }
-    }    
-  ],
-  "layout": {
-    "xaxis": {
-      "range": [ 0.75, 5.25 ]
-    },
-    "yaxis": {
-      "range": [0, 8]
-    },
-    "title": {"text": "Data Labels Hover"}
-  }
-}
-```
-
-```plotly
-{
-  "data": [{
-      "x": [1, 2, 3],
-      "y": [4, 5, 6],
-      "type": "scatter"
-    },
-    {
-      "x": [20, 30, 40],
-      "y": [50, 60, 70],
-      "xaxis": "x2",
-      "yaxis": "y2",
-      "type": "scatter"
-  }],
-  "layout": {
-    "grid": {
-      "rows": 1,
-      "columns": 2,
-      "pattern": "independent"
-    },
-    "title": {
-      "text": "Simple Subplot"
-    }    
-  }
-}
-```
-
-```plotly
-{
-  "data": [{
-		"z": [[10, 10.625, 12.5, 15.625, 20],
-          [5.625, 6.25, 8.125, 11.25, 15.625],
-          [2.5, 3.125, 5.0, 8.125, 12.5],
-          [0.625, 1.25, 3.125, 6.25, 10.625],
-          [0, 0.625, 2.5, 5.625, 10]],
-		"type": "contour"
-	}],
-  "layout": {
-    "title": {
-      "text": "Basic Contour Plot"
-    }
-  }
-}
-```
-
-## Markdown guide
-
-Academic Pages uses [kramdown](https://kramdown.gettalong.org/index.html) for Markdown rendering, which has some differences from other Markdown implementations such as GitHub's. In addition to this guide, please see the [kramdown Syntax page](https://kramdown.gettalong.org/syntax.html) for full documentation.  
-
-### Header three
-
-#### Header four
-
-##### Header five
-
-###### Header six
-
-## Blockquotes
-
-Single line blockquote:
-
-> Quotes are cool.
-
-## Tables
 
-### Table 1
-
-| Entry            | Item   |                                                              |
-| --------         | ------ | ------------------------------------------------------------ |
-| [John Doe](#)    | 2016   | Description of the item in the list                          |
-| [Jane Doe](#)    | 2019   | Description of the item in the list                          |
-| [Doe Doe](#)     | 2022   | Description of the item in the list                          |
-
-### Table 2
-
-| Header1 | Header2 | Header3 |
-|:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | ce
-ll5   | cell6   |
-|-----------------------------|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=============================|
-| Foot1   | Foot2   | Foot3   |
-
-## Definition Lists
-
-Definition List Title
-:   Definition list division.
-
-Startup
-:   A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.
-
-#dowork
-:   Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.
-
-Do It Live
-:   I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
-
-## Unordered Lists (Nested)
-
-  * List item one 
-      * List item one 
-          * List item one
-          * List item two
-          * List item three
-          * List item four
-      * List item two
-      * List item three
-      * List item four
-  * List item two
-  * List item three
-  * List item four
-
-## Ordered List (Nested)
-
-  1. List item one 
-      1. List item one 
-          1. List item one
-          2. List item two
-          3. List item three
-          4. List item four
-      2. List item two
-      3. List item three
-      4. List item four
-  2. List item two
-  3. List item three
-  4. List item four
-
-## Buttons
-
-Make any link standout more when applying the `.btn` class.
-
-## Notices
-
-Basic notices or call-outs are supported using the following syntax:
-
-```markdown
-**Watch out!** You can also add notices by appending `{: .notice}` to the line following paragraph.
-{: .notice}
-```
-
-which wil render as:
-
-**Watch out!** You can also add notices by appending `{: .notice}` to the line following paragraph.
-{: .notice}
-
-### Footnotes
-
-Footnotes can be useful for clarifying points in the text, or citing information.[^1] Markdown support numeric footnotes, as well as text as long as the values are unique.[^note]
-
-```markdown
-This is the regular text.[^1] This is more regular text.[^note]
-
-[^1]: This is the footnote itself.
-[^note]: This is another footnote.
-```
-
-[^1]: Such as this footnote.
-[^note]: When using text for footnotes markers, no spaces are permitted in the name.
-
-## HTML Tags
-
-### Address Tag
-
-<address>
-  1 Infinite Loop<br /> Cupertino, CA 95014<br /> United States
-</address>
-
-### Anchor Tag (aka. Link)
-
-This is an example of a [link](https://github.com "GitHub").
-
-### Abbreviation Tag
-
-The abbreviation CSS stands for "Cascading Style Sheets".
-
-*[CSS]: Cascading Style Sheets
-
-### Cite Tag
-
-"Code is poetry." ---<cite>Automattic</cite>
-
-### Code Tag
-
-You will learn later on in these tests that `word-wrap: break-word;` will be your best friend.
-
-You can also write larger blocks of code with syntax highlighting supported for some languages, such as Python:
-
-```python
-print('Hello World!')
-```
-
-or R:
-
-```R
-print("Hello World!", quote = FALSE)
-```
-
-### Details Tag (collapsible sections)
-
-The HTML `<details>` tag works well with Markdown and allows you to include collapsible sections, see [W3Schools](https://www.w3schools.com/tags/tag_details.asp) for more information on how to use the tag.
-
-<details>
-  <summary>Collapsed by default</summary>
-  This section was collapsed by default!
-</details>
-
-The source code:
-
-```HTML
-<details>
-  <summary>Collapsed by default</summary>
-  This section was collapsed by default!
-</details>
-```
-
-Or, you can leave a section open by default by including the `open` attribute in the tag:
-
-<details open>
-  <summary>Open by default</summary>
-  This section is open by default thanks to open in the &lt;details open&gt; tag!
-</details>
-
-
-### Emphasize Tag
-
-The emphasize tag should _italicize_ text.
-
-### Insert Tag
-
-This tag should denote <ins>inserted</ins> text.
-
-### Keyboard Tag
-
-This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` tag.
-
-### Preformatted Tag
-
-This tag styles large blocks of code.
-
-<pre>
-.post-title {
-  margin: 0 0 5px;
-  font-weight: bold;
-  font-size: 38px;
-  line-height: 1.2;
-  and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
-}
-</pre>
-
-### Quote Tag
-
-<q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
-
-### Strike Tag
-
-This tag will let you <strike>strikeout text</strike>.
-
-### Strong Tag
-
-This tag shows **bold text**.
-
-### Subscript Tag
-
-Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.
-
-### Superscript Tag
-
-Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.
-
-### Variable Tag
-
-This allows you to denote <var>variables</var>.
-
-***
-**Footnotes**
-
-The footnotes in the page will be returned following this line, return to the section on <a href="#footnotes">Markdown Footnotes</a>.
-
+## 🎓 PhD Positions
+
+### Ph.D. in Quantum Information Science & Cryptography
+
+**Number of Positions:** 3-4 positions available
+
+**Duration:** 4 years (standard IIT Indore PhD program)
+
+**Eligibility:**
+- Bachelor's degree in Physics, Mathematics, Engineering Physics, or related field
+- Strong foundation in linear algebra and quantum mechanics
+- Programming experience (Python, C++, MATLAB preferred)
+- Valid GATE score or equivalent qualification
+- Strong written and verbal communication skills
+
+**Research Areas:**
+1. **Quantum Cryptography & Key Distribution**
+   - Novel QKD protocols
+   - Security analysis under realistic attacks
+   - Device-independent quantum cryptography
+   - Continuous-variable QKD systems
+
+2. **Quantum Information Theory**
+   - Multipartite entanglement and quantum correlations
+   - Quantum steering and contextuality
+   - Resource theory of quantum systems
+   - Device-independent certification
+
+3. **Quantum Networks & Multi-party Computation**
+   - Quantum network architectures (ChaQra framework)
+   - Protocols for distributed quantum computing
+   - Quantum repeaters and long-distance communication
+   - Quantum-secure network design
+
+4. **Post-Quantum Cryptography & Hybrid Systems**
+   - Integration of quantum and classical cryptography
+   - Lattice-based cryptography applications
+   - Hybrid security frameworks
+   - Migration strategies for quantum-safe infrastructure
+
+**What We Offer:**
+- **Scholarship:** IIT Indore PhD fellowship (~INR 37,000/month + benefits)
+- **Research Environment:** State-of-the-art quantum computing facilities
+- **Collaboration:** Access to quantum hardware (IBM Quantum, IonQ, Amazon Braket)
+- **International Exposure:** Collaborations with OIST (Japan), HRI (Allahabad), SNBNCBS (Kolkata)
+- **Industry Connection:** Ongoing partnership with QNu Labs (quantum cryptography startup)
+- **Publication Support:** Funding for conference presentations and journal submissions
+- **Mentorship:** Regular meetings with advisor and research group discussions
+
+**How to Apply:**
+1. Register on IIT Indore admission portal
+2. Submit GATE score and qualifying examination results
+3. Write a brief research interest statement (500 words)
+4. Arrange 2 letters of recommendation from faculty
+5. Contact: **shashankg@iiti.ac.in** with subject "PhD Application - Qurious Labs"
+
+**Application Deadline:** Rolling admissions (apply ASAP for 2025-26 batch)
+
+**Interview Process:**
+- Preliminary screening based on academic credentials
+- One-to-one discussion about research interests
+- Technical interview on quantum computing fundamentals
+- Selection announcement within 2-3 weeks of interview
+
+---
+
+## 🔬 Postdoctoral Researcher Positions
+
+### Postdoc in Quantum Cryptography & Information Theory
+
+**Number of Positions:** 2-3 positions available
+
+**Duration:** 2-3 years (extendable based on performance)
+
+**Eligibility:**
+- Ph.D. in Physics, Mathematics, Computer Science, or related field
+- Demonstrated research experience in quantum information/cryptography
+- Strong publication record (minimum 5 papers in peer-reviewed journals)
+- Excellent communication and collaborative skills
+- Self-motivated with ability to work independently
+
+**Preferred Background:**
+- Experience with quantum key distribution (QKD)
+- Expertise in device-independent quantum information
+- Knowledge of quantum networks and protocols
+- Familiarity with quantum computing platforms
+- Experience with security analysis and cryptographic protocols
+
+**Research Projects:**
+
+**Project 1: Practical Security in Device-Independent QKD**
+- Analyze security of device-independent QKD under realistic conditions
+- Investigate sequential measurement attacks
+- Develop countermeasures and robustness improvements
+- Collaborate with QNu Labs on implementation aspects
+
+**Project 2: Quantum Network Architecture & Protocols**
+- Develop protocols for multi-node quantum networks
+- Design ChaQra network topology optimizations
+- Analyze routing and key distribution algorithms
+- Test on quantum network simulators
+
+**Project 3: Hybrid Quantum-Classical Cryptography**
+- Design post-quantum cryptography schemes
+- Integrate quantum key distribution with classical cryptography
+- Analyze hybrid security under quantum threats
+- Develop migration strategies for infrastructure
+
+**Compensation Package:**
+- **Salary:** INR 65,000 - 90,000/month (based on experience)
+- **Research Grant:** INR 5-10 Lakhs/year for conference travel and supplies
+- **Benefits:** Health insurance, on-campus accommodation available
+- **International Travel:** Support for conference presentations
+- **Publication Support:** Covered journal submission fees
+
+**Working Environment:**
+- Access to quantum computing platforms (IBM, IonQ, Amazon Braket)
+- Collaboration with international research partners
+- Regular seminars and journal club discussions
+- Mentoring opportunities for PhD students
+- Flexible work arrangements (option to work remotely)
+
+**How to Apply:**
+1. Send CV, list of publications, and research statement to shashankg@iiti.ac.in
+2. Include 2 letters of recommendation (can be sent directly by recommenders)
+3. Arrange a time for interview/discussion
+4. Submit a brief proposal (1-2 pages) on your research interests within the group
+
+**Application Deadline:** Open until positions are filled
+
+**Selection Timeline:**
+- Application review: 1-2 weeks
+- Interview: 2-3 weeks from application
+- Offer decision: Within 1 week of interview
+- Expected start date: Flexible (2-3 months notice)
+
+---
+
+## 📚 Master's Thesis (M.Tech / MS by Research)
+
+### M.Tech Thesis in Quantum Computing & Cryptography
+
+**Number of Positions:** 2-3 positions available
+
+**Duration:** 2 years (M.Tech program) or 1.5 years (MS by research)
+
+**Eligibility:**
+- B.Tech/B.Sc in Physics, Mathematics, Engineering, Computer Science, or related field
+- GATE qualification (preferred but not mandatory)
+- Strong interest in quantum computing and cryptography
+- Good academic record (minimum 7.0 CGPA or equivalent)
+
+**Thesis Topics Available:**
+
+**Topic 1: Security Analysis of Continuous-Variable QKD**
+- Study CV-QKD protocols and their vulnerabilities
+- Analyze security under practical conditions
+- Design and simulate CV-QKD systems in MATLAB
+- Deliverables: Simulation framework, security analysis report, thesis
+
+**Topic 2: Device-Independent Quantum Key Distribution**
+- Understand device-independent paradigm
+- Analyze DI-QKD protocols and their limitations
+- Investigate quantum correlations and Bell inequalities
+- Deliverables: Theoretical analysis, simulation codes, thesis
+
+**Topic 3: Post-Quantum Cryptography Implementation**
+- Study NIST-approved PQC algorithms
+- Implement lattice-based cryptography schemes
+- Analyze performance and security properties
+- Deliverables: Software library, benchmarking study, thesis
+
+**Topic 4: Quantum Network Simulation & Design**
+- Develop simulator for quantum network protocols
+- Analyze ChaQra network architecture
+- Study routing and key distribution algorithms
+- Deliverables: Simulation software, performance analysis, thesis
+
+**Topic 5: Quantum Random Number Generation**
+- Study QRNG sources and detection methods
+- Design entropy estimation framework
+- Implement randomness certification protocols
+- Deliverables: Experimental setup (simulation), validation framework, thesis
+
+**What We Provide:**
+- **Thesis Advisor:** Direct supervision by Dr. Shashank Gupta
+- **Research Environment:** Access to quantum computing labs
+- **Tools & Software:** MATLAB, Python, Qiskit, QuTiP licenses
+- **Computational Resources:** High-performance computing cluster access
+- **Publication Opportunity:** Co-authored papers with advisor
+- **Stipend:** INR 5,000-8,000/month during thesis period (merit-based)
+- **Conference Support:** Funding to present thesis work at conferences
+
+**Timeline:**
+- **Semester 1:** Course work and literature review
+- **Semester 2:** Project planning and initial implementation
+- **Semester 3:** Main research and results generation
+- **Semester 4:** Thesis writing and finalization
+
+**How to Apply:**
+1. Fill IIT Indore M.Tech admission form
+2. Mention research interest: "Quantum Cryptography & Information Science"
+3. Specify preferred thesis advisor: "Dr. Shashank Gupta"
+4. Email to shashankg@iiti.ac.in with subject "M.Tech Thesis Interest - Qurious Labs"
+5. Include brief statement (300 words) on why you're interested in quantum research
+
+**Admission Timeline:**
+- Applications open: June-July each year
+- Selection announcements: August
+- Program starts: July/August (following year)
+
+---
+
+## 🔬 Internship Positions
+
+### B.Tech Research Internship (SPARQ Program)
+
+**Duration:** 2-3 months (May-July or November-January)
+
+**Number of Positions:** 4-5 internships available
+
+**Eligibility:**
+- Currently pursuing B.Tech (2nd, 3rd, or 4th year)
+- Interest in quantum computing or cryptography
+- Good programming skills (Python preferred)
+- Willingness to learn quantum computing concepts
+
+**Project Options:**
+
+**Project 1: Quantum Key Distribution Simulator**
+- Build QKD protocol simulator in Python
+- Implement BB84, BBM92 protocols
+- Add visualization tools
+- **Skills:** Python programming, quantum basics
+- **Duration:** 8-10 weeks
+
+**Project 2: Quantum Machine Learning Application**
+- Study quantum ML algorithms
+- Implement quantum circuits for simple classification
+- Test on IBM Quantum hardware
+- **Skills:** Python, quantum circuits, ML basics
+- **Duration:** 8-10 weeks
+
+**Project 3: Post-Quantum Cryptography Explorer**
+- Implement lattice-based cryptography schemes
+- Create interactive tool for algorithm visualization
+- Performance comparison with classical cryptography
+- **Skills:** Python, C++, cryptography basics
+- **Duration:** 8-10 weeks
+
+**Project 4: Quantum Network Topology Analysis**
+- Study quantum network architectures (ChaQra)
+- Analyze performance metrics
+- Design optimal routing strategies
+- **Skills:** Python, graph theory, network concepts
+- **Duration:** 8-10 weeks
+
+**Project 5: QRNG Statistical Testing**
+- Implement randomness testing frameworks
+- Test various QRNG sources
+- Create validation tools
+- **Skills:** Python, statistics, signal processing
+- **Duration:** 8-10 weeks
+
+**What We Offer:**
+- **Mentorship:** Direct guidance from Qurious Labs members
+- **Learning:** Hands-on quantum computing experience
+- **Recognition:** Certificate and letter of recommendation
+- **Stipend:** INR 5,000/month (SPARQ sponsored)
+- **Publication:** Co-authored technical report or conference poster
+- **Conversion:** Strong performers can convert to PhD/Masters positions
+
+**How to Apply:**
+1. Apply through SPARQ program (Cisco-Infosys-IIT Bombay initiative)
+2. Specify research interest: "Quantum Cryptography & Networks"
+3. Email resume to shashankg@iiti.ac.in with subject "SPARQ Internship - Qurious Labs"
+4. Include brief motivation letter (200 words)
+
+**Application Timeline:**
+- Winter internships: Apply by September
+- Summer internships: Apply by February
+- Rolling admissions also available
+
+**Interview Process:**
+- Preliminary screening of applications
+- Phone/video interview with internship mentor
+- Small coding test or problem-solving task
+- Selection within 1 week
+
+---
+
+### Masters Thesis Internship (External University)
+
+**Duration:** 3-6 months
+
+**Number of Positions:** 2-3 available
+
+**Eligibility:**
+- Masters student from any university in India or abroad
+- Thesis work related to quantum computing, cryptography, or information theory
+- Interest in collaborative research with Qurious Labs
+
+**Available Research Topics:**
+1. **Quantum Cryptanalysis & Security**
+2. **Device-Independent Quantum Networks**
+3. **Hybrid Post-Quantum Systems**
+4. **Quantum Simulation & Optimization**
+5. **Advanced QKD Protocols**
+
+**Benefits:**
+- Work with experienced quantum researchers
+- Access to research facilities and quantum platforms
+- Co-authored publications
+- Industry exposure through QNu Labs collaboration
+- Strong recommendation letter
+- Travel support for conference presentations
+
+**How to Apply:**
+- Email detailed research proposal (2-3 pages)
+- Provide academic transcripts and CV
+- Arrange 1 letter of recommendation
+- Contact: shashankg@iiti.ac.in with subject "Masters Thesis Internship - Qurious Labs"
+
+---
+
+## 💼 Visiting Researcher / Sabbatical Position
+
+### Visiting Faculty / Researcher
+
+**Duration:** 6 months - 2 years (negotiable)
+
+**Eligibility:**
+- Ph.D. in quantum information, physics, mathematics, or related field
+- Active research program in quantum technologies
+- Interest in collaboration with Qurious Labs
+
+**Benefits:**
+- Office space and research facilities at IIT Indore
+- Access to computational resources
+- Collaboration with PhD students and postdocs
+- Travel support for conference presentations
+- Housing support available
+
+**How to Apply:**
+- Send CV, research statement, and publication list
+- Propose specific research collaboration
+- Arrange 1-2 letters of recommendation
+- Contact: shashankg@iiti.ac.in with subject "Visiting Researcher - Qurious Labs"
+
+---
+
+## 📋 General Application Information
+
+### Required Documents (All Positions)
+
+1. **Curriculum Vitae (CV)**
+   - Should include academic background, research interests, and relevant skills
+   - For PhD/Postdoc: Include list of publications
+   - 2-3 pages recommended
+
+2. **Statement of Purpose / Research Interests**
+   - Why you're interested in quantum research
+   - Specific research areas you want to pursue
+   - Long-term career goals in quantum science
+   - 250-500 words recommended
+
+3. **Academic Credentials**
+   - Transcripts of marks (B.Tech/M.Tech/Ph.D.)
+   - GATE score (if applicable)
+   - Any other standardized test scores
+
+4. **Letters of Recommendation**
+   - From academic advisors or research supervisors
+   - For PhD: 2-3 letters recommended
+   - For Postdoc: 2-3 letters required
+   - Can be submitted separately by recommenders
+
+### Application Process
+
+**Step 1: Prepare Documents**
+- Compile all required materials
+- Ensure CV is up-to-date and well-formatted
+- Write clear and specific statement of purpose
+
+**Step 2: Submit Application**
+- Email to: **shashankg@iiti.ac.in**
+- Subject line format: "[Position Type] Application - [Your Name]"
+- Attach all documents as PDF files
+- Include contact phone number in email body
+
+**Step 3: Initial Screening**
+- Applications reviewed within 1-2 weeks
+- Shortlisted candidates contacted for interview
+- Screening based on fit with research group
+
+**Step 4: Interview**
+- Technical discussion about research interests
+- Evaluation of problem-solving skills
+- Discussion of career goals and expectations
+- Format: Video call or in-person (if nearby)
+
+**Step 5: Selection & Offer**
+- Selected candidates receive formal offer
+- Offer includes position details, compensation, and start date
+- Acceptance deadline typically 1 week
+
+### Timeline Summary
+
+| Position | Application Deadline | Interview Timeline | Start Date |
+|----------|---------------------|-------------------|-----------|
+| PhD | Ongoing | 2-3 weeks | July/December |
+| Postdoc | Ongoing | 2-4 weeks | Flexible (1-3 months) |
+| M.Tech | June-July | August | July/August |
+| B.Tech Internship (SPARQ) | Feb/Sept | 2-3 weeks | May/Nov |
+| Masters Internship | Ongoing | 1-2 weeks | Flexible |
+| Visiting Researcher | Ongoing | 2-4 weeks | Flexible |
+
+---
+
+## 🌍 Why Join Qurious Labs?
+
+### Research Excellence
+- **Cutting-Edge Topics:** Quantum cryptography, networks, and information theory
+- **Publication Opportunities:** Regular publications in top-tier journals
+- **Industry Connection:** Collaboration with QNu Labs (leading quantum startup)
+- **Global Network:** Partners with OIST (Japan), HRI, SNBNCBS, and international institutions
+
+### Learning Environment
+- **Expert Mentorship:** Guidance from faculty with 15+ years quantum research experience
+- **State-of-the-Art Facilities:** Access to quantum computing hardware
+- **Collaborative Community:** Weekly seminars, paper discussions, and brainstorming sessions
+- **Conference Participation:** Support to present at national and international conferences
+
+### Career Development
+- **Publication Record:** Help building strong publication portfolio
+- **Networking:** Connection with quantum research community globally
+- **Industry Exposure:** Understand practical quantum technology deployment
+- **Career Guidance:** Help with postdoc/faculty/industry placement
+
+### Facilities & Resources
+- **Quantum Hardware Access:** IBM Quantum, IonQ, Amazon Braket
+- **Software Tools:** MATLAB, Python, Qiskit, QuTiP, Mathematica licenses
+- **Computing Resources:** High-performance cluster for simulations
+- **Library:** Full access to research databases and journals
+- **Accommodation:** On-campus housing available for research scholars
+
+### Location & Lifestyle
+- **Indore City:** Pleasant weather, good food scene, affordable living
+- **IIT Indore Campus:** Modern facilities, sports, cultural activities
+- **Community:** Friendly research community and student organizations
+- **Proximity:** Close to Bengaluru (QNu Labs), Delhi, Mumbai
+
+---
+
+## 💬 Get in Touch
+
+### Primary Contact
+
+**Dr. Shashank Gupta**  
+**Assistant Professor, Qurious Labs**  
+Centre for Quantum Computing & Department of Physics  
+Indian Institute of Technology Indore
+
+- **Email:** shashankg@iiti.ac.in
+- **Phone:** +91-6291805918
+- **Office Location:** IIT Indore Campus, Khandwa Road, Simrol, Indore 453552, India
+
+### Alternative Contacts
+
+- **General inquiries:** shashankg@iiti.ac.in
+- **Technical questions:** shashankg687@gmail.com
+- **LinkedIn:** linkedin.com/in/dr-shashank-gupta-22268382
+
+### Response Time
+
+- **Email responses:** Typically within 2-3 business days
+- **Meeting requests:** Scheduled within 1 week
+- **Application decisions:** 2-4 weeks after application submission
+
+---
+
+## 📝 Frequently Asked Questions
+
+### Q: Do I need a strong background in quantum mechanics to apply?
+**A:** For PhD and Postdoc positions, yes. For internships and M.Tech, we value motivation and willingness to learn. We provide training as needed.
+
+### Q: Is prior publication record required?
+**A:** For Postdoc, yes. For PhD and lower levels, strong academic performance is more important. Publication record is a plus.
+
+### Q: Can international students apply?
+**A:** For PhD and M.Tech: Yes, through appropriate visa channels. For Internships: Yes, but must arrange own visa. Contact us for details.
+
+### Q: Is this a fully funded position?
+**A:** PhD is fully funded by IIT. Postdoc includes salary + research funds. Internships have stipend. M.Tech has fee waiver option for top candidates.
+
+### Q: What are the living expenses in Indore?
+**A:** Approximately INR 10,000-15,000/month for students (accommodation + food). On-campus housing significantly reduces costs.
+
+### Q: How often do PhD students graduate?
+**A:** Average PhD duration is 3.5-4.5 years. Regular publications and strong mentorship keep students on track.
+
+### Q: Are there opportunities to work with industry partners?
+**A:** Yes! We collaborate with QNu Labs and other quantum companies. Students can do internships and apply research practically.
+
+### Q: What are job prospects after Qurious Labs?
+**A:** Strong! Our alumni work in academia (faculty positions), startups (quantum companies), and established tech companies (Google, IBM, Microsoft quantum teams).
+
+---
+
+## 📚 Additional Resources
+
+### Quantum Computing Learning Resources
+- **Qiskit Textbook:** qiskit.org/learn
+- **IBM Quantum:** quantum-computing.ibm.com
+- **Amazon Braket:** aws.amazon.com/braket/
+- **MIT OpenCourseWare:** ocw.mit.edu (quantum mechanics courses)
+
+### Quantum Cryptography Resources
+- **NIST PQC Standards:** csrc.nist.gov/projects/post-quantum-cryptography
+- **QNu Labs Resources:** qnulabs.com
+- **Academic Papers:** arxiv.org (search: quantum cryptography)
+
+### IIT Indore Information
+- **Website:** iiti.ac.in
+- **Admissions:** admissions.iiti.ac.in
+- **Campus Tours:** Available on request
+
+---
+
+## 🚀 Apply Today!
+
+**Ready to join Qurious Labs?**
+
+Send your application to **shashankg@iiti.ac.in** with the subject line indicating your position type. We look forward to hearing from you!
+
+---
+
+**Qurious Labs - Quantum Research in Information, Optimization and Unconditional Security**
+
+*"Building quantum-secure infrastructure for India and beyond"*
+
+---
+
+**Last Updated:** December 9, 2025
+
+For the most current information, visit the official IIT Indore website or contact Dr. Shashank Gupta directly.
