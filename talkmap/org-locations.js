@@ -60,7 +60,7 @@ var addressPoints = [
     80.2404146
   ],
   [
-    "Framework for Detection of Deepfake Contents Using Quantum Learning Models<br />Sustainable Healthcare Solutions through Quantum AI - ATAL Sponsored Faculty Development Program; Reva University, Bengaluru, India",
+    "Detection of Deepfake Contents of the East Asian Celebrities Using Quantum Learning Models<br />Sustainable Healthcare Solutions through Quantum AI - ATAL Sponsored Faculty Development Program; Reva University, Bengaluru, India",
     13.1154027,
     77.6357699
   ],
