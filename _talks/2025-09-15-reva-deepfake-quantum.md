@@ -1,5 +1,5 @@
 ---
-title: "Framework for Detection of Deepfake Contents Using Quantum Learning Models"
+title: "Detection of Deepfake Contents of the East Asian Celebrities Using Quantum Learning Models"
 collection: talks
 type: "Invited Lecture"
 permalink: /talks/2025-09-15-reva-deepfake-quantum
