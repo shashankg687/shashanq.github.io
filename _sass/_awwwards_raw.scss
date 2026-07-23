@@ -1,0 +1,362 @@
+/* ==========================================================================
+   RAW-2 Inspired $10,000 Luxury Editorial Academic Theme
+   Onyx Obsidian (#060608) | Electric Lime (#BFF549) | Syne & JetBrains Mono
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Syne:wght@700;800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/aspekta');
+
+/* Design Tokens */
+$raw-bg: #060608;
+$raw-surface: #111116;
+$raw-surface-hover: #171720;
+$raw-border: #1E1E28;
+$raw-border-bright: #2E2E3D;
+$raw-lime: #BFF549;
+$raw-lime-glow: rgba(191, 245, 73, 0.15);
+$raw-text-main: #FFFFFF;
+$raw-text-body: #C5C8D4;
+$raw-text-dim: #7A7F96;
+
+$font-syne: 'Syne', sans-serif;
+$font-mono: 'JetBrains Mono', monospace;
+$font-aspekta: 'Aspekta', ui-sans-serif, system-ui, sans-serif;
+
+/* Global Dark Overrides */
+html, body {
+  background-color: $raw-bg !important;
+  color: $raw-text-body !important;
+  font-family: $font-aspekta !important;
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-syne !important;
+  color: $raw-text-main !important;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+a {
+  color: $raw-lime !important;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  &:hover {
+    color: #FFFFFF !important;
+  }
+}
+
+/* RAW Brutalist Headline (80px - 100px) */
+.raw-title-huge {
+  font-family: $font-syne !important;
+  font-size: 92px !important;
+  font-weight: 800 !important;
+  line-height: 0.95 !important;
+  letter-spacing: -0.04em !important;
+  color: #FFFFFF !important;
+  margin-bottom: 24px !important;
+  text-transform: uppercase;
+}
+
+@media (max-width: 992px) {
+  .raw-title-huge {
+    font-size: 56px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .raw-title-huge {
+    font-size: 38px !important;
+  }
+}
+
+/* Technical Monospaced Label */
+.raw-mono-label {
+  font-family: $font-mono !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.15em !important;
+  color: $raw-lime !important;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+/* Luxury Glass Card */
+.raw-card-luxury {
+  background: $raw-surface !important;
+  border: 1px solid $raw-border !important;
+  border-radius: 0px !important;
+  padding: 32px !important;
+  position: relative;
+  transition: all 0.25s ease;
+  &:hover {
+    border-color: $raw-border-bright !important;
+    background: $raw-surface-hover !important;
+    transform: translateY(-2px);
+  }
+}
+
+.raw-card-highlight {
+  background: $raw-surface !important;
+  border: 1px solid $raw-border !important;
+  border-top: 3px solid $raw-lime !important;
+  border-radius: 0px !important;
+  padding: 36px !important;
+}
+
+/* Marquee Ticker */
+.raw-ticker-container {
+  width: 100%;
+  overflow: hidden;
+  background: #0A0A0F;
+  border-top: 1px solid $raw-border;
+  border-bottom: 1px solid $raw-border;
+  padding: 14px 0;
+  margin: 32px 0 48px 0;
+}
+
+.raw-ticker-track {
+  display: flex;
+  white-space: nowrap;
+  animation: rawTicker 25s linear infinite;
+  gap: 40px;
+}
+
+@keyframes rawTicker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.raw-ticker-item {
+  font-family: $font-mono;
+  font-size: 12px;
+  font-weight: 700;
+  color: $raw-lime;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  &::after {
+    content: '///';
+    color: $raw-text-dim;
+    margin-left: 12px;
+  }
+}
+
+/* CTA Buttons */
+.raw-btn-lime {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: $raw-lime !important;
+  color: #000000 !important;
+  font-family: $font-mono !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  padding: 16px 32px !important;
+  border-radius: 0px !important;
+  border: none !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  &:hover {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    transform: translateY(-2px);
+  }
+}
+
+.raw-btn-dark {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: $raw-bg !important;
+  color: $raw-text-body !important;
+  border: 1px solid $raw-border !important;
+  font-family: $font-mono !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  padding: 16px 32px !important;
+  border-radius: 0px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  &:hover {
+    border-color: $raw-lime !important;
+    color: #FFFFFF !important;
+  }
+}
+
+/* Filter Pills */
+.raw-filter-pill {
+  font-family: $font-mono;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 16px;
+  background: $raw-surface;
+  border: 1px solid $raw-border;
+  color: $raw-text-dim;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  &.active, &:hover {
+    background: $raw-lime;
+    color: #000000;
+    border-color: $raw-lime;
+  }
+}
+
+/* Masthead Centrally Aligned & Symmetric Overrides */
+.masthead {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100vw !important;
+  background-color: rgba(6, 6, 8, 0.95) !important;
+  backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid $raw-border !important;
+  z-index: 9999 !important;
+  float: none !important;
+}
+
+.masthead__inner-wrap {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 10px 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  float: none !important;
+}
+
+.masthead__menu {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  float: none !important;
+}
+
+#site-nav.greedy-nav {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  background: transparent !important;
+  position: relative !important;
+  float: none !important;
+
+  button, .navicon {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
+  .hidden-links {
+    display: none !important;
+  }
+
+  .visible-links {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: auto !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    text-align: center !important;
+    float: none !important;
+    list-style: none !important;
+
+    li, li.hidden {
+      display: inline-flex !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      align-items: center !important;
+      float: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+
+      a {
+        font-family: $font-mono !important;
+        font-size: 13px !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.06em !important;
+        text-transform: uppercase !important;
+        color: $raw-text-dim !important;
+        padding: 8px 16px !important;
+        margin: 0 !important;
+        white-space: nowrap !important;
+
+        &:hover {
+          color: $raw-lime !important;
+        }
+      }
+
+      &.masthead__menu-item--lg a {
+        color: #FFFFFF !important;
+        font-weight: 800 !important;
+        font-size: 14px !important;
+        letter-spacing: 0.1em !important;
+        margin-right: 8px !important;
+      }
+    }
+  }
+}
+
+/* Sidebar Profile */
+.sidebar {
+  background: transparent !important;
+}
+
+.author__avatar img {
+  border-radius: 0px !important;
+  border: 1px solid $raw-lime !important;
+}
+
+.author__name {
+  font-family: $font-syne !important;
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  font-size: 20px !important;
+}
+
+.author__bio {
+  color: $raw-text-dim !important;
+  font-size: 13px !important;
+}
+
+/* Footer Overrides */
+.page__footer {
+  background-color: $raw-bg !important;
+  border-top: 1px solid $raw-border !important;
+  color: $raw-text-dim !important;
+}
+
+/* Grid helper */
+.raw-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.raw-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}

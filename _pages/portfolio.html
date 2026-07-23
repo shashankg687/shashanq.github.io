@@ -5,16 +5,44 @@ permalink: /portfolio/
 author_profile: true
 ---
 
-{% include base_path %}
+<div style="padding: 10px 0;">
 
-<h2>Research Collaborations and Partnerships</h2>
+  <div style="margin-bottom: 32px;">
+    <span class="brand-label">PARTNERSHIPS & ECOSYSTEM</span>
+    <h1 style="font-size: 42px; font-weight: 800; color: #FFFFFF; margin-bottom: 16px;">Collaborations & Partners</h1>
+    <p style="color: #A0A0A0; font-size: 15px;">
+      We collaborate with premier academic institutes, quantum hardware developers, and deep-tech industry leaders in India and globally.
+    </p>
+  </div>
 
-Over my research career, I have had the privilege of collaborating with leading academic institutions, research organizations, and industry partners across India and internationally. These collaborations have been instrumental in advancing quantum information research and developing practical quantum communication technologies.
+  <div class="brand-grid">
+    <div class="brand-card">
+      <span class="brand-badge">ACADEMIC HOME</span>
+      <h3 style="font-size: 20px; color: #FFFFFF; margin-bottom: 12px;">IIT Indore</h3>
+      <p style="color: #A0A0A0; font-size: 14px;">
+        Centre for Quantum Computing and Department of Physics at Indian Institute of Technology Indore.
+      </p>
+    </div>
 
-Below is an overview of my key collaborations and partnerships:
+    <div class="brand-card">
+      <span class="brand-badge">INDUSTRY PARTNER</span>
+      <h3 style="font-size: 20px; color: #FFFFFF; margin-bottom: 12px;">QNu Labs</h3>
+      <p style="color: #A0A0A0; font-size: 14px;">
+        Collaborative research and development of commercial Quantum Key Distribution (QKD) and QRNG technologies.
+      </p>
+    </div>
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+    <div class="brand-card">
+      <span class="brand-badge">INTERNATIONAL ALUMNI</span>
+      <h3 style="font-size: 20px; color: #FFFFFF; margin-bottom: 12px;">OIST Japan</h3>
+      <p style="color: #A0A0A0; font-size: 14px;">
+        Okinawa Institute of Science and Technology Graduate University quantum information group.
+      </p>
+    </div>
+  </div>
 
+  {% for post in site.portfolio %}
+    {% include archive-single.html %}
+  {% endfor %}
 
+</div>

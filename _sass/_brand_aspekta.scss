@@ -1,0 +1,208 @@
+/* ==========================================================================
+   Aspekta & Glaido Brand Design System
+   Source: brandguide.json
+   ========================================================================== */
+
+@import url('https://fonts.cdnfonts.com/css/aspekta');
+
+/* Design Tokens */
+$brand-bg: #0D0D0D;
+$brand-surface: #141414;
+$brand-surface-hover: #1A1A1A;
+$brand-border: #252525;
+$brand-primary: #BFF549;
+$brand-accent: #BFF549;
+$brand-text: #F5F5F5;
+$brand-text-muted: #A0A0A0;
+$brand-link: #BFF549;
+
+$font-aspekta: 'Aspekta', ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+/* Global Resets & Dark Baseline */
+html, body {
+  background-color: $brand-bg !important;
+  color: $brand-text !important;
+  font-family: $font-aspekta !important;
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-aspekta !important;
+  color: #FFFFFF !important;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: $brand-link !important;
+  text-decoration: none;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  &:hover {
+    color: #FFFFFF !important;
+  }
+}
+
+/* 76px Hero Headline */
+.brand-hero-title {
+  font-size: 76px !important;
+  font-weight: 800 !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.035em !important;
+  color: #FFFFFF !important;
+  margin-bottom: 20px !important;
+}
+
+@media (max-width: 768px) {
+  .brand-hero-title {
+    font-size: 42px !important;
+  }
+}
+
+/* 14px Tracked Label */
+.brand-label {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  color: $brand-primary !important;
+  display: block;
+  margin-bottom: 12px;
+}
+
+/* Buttons */
+.btn-primary-brand {
+  display: inline-block;
+  background-color: $brand-primary !important;
+  color: #000000 !important;
+  font-weight: 800 !important;
+  font-size: 14px !important;
+  padding: 14px 28px !important;
+  border-radius: 2px !important;
+  border: none !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  &:hover {
+    opacity: 0.9;
+    color: #000000 !important;
+    transform: translateY(-2px);
+  }
+}
+
+.btn-secondary-brand {
+  display: inline-block;
+  background-color: $brand-bg !important;
+  color: #B6B6B6 !important;
+  border: 1px solid $brand-border !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  padding: 14px 28px !important;
+  border-radius: 2px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  &:hover {
+    border-color: $brand-primary !important;
+    color: #FFFFFF !important;
+  }
+}
+
+/* Card Containers - Sharp 0px Geometry */
+.brand-card {
+  background: $brand-surface !important;
+  border: 1px solid $brand-border !important;
+  border-radius: 0px !important;
+  padding: 32px !important;
+  margin-bottom: 24px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+  &:hover {
+    border-color: rgba(191, 245, 73, 0.4) !important;
+  }
+}
+
+.brand-grant-card {
+  background: $brand-surface !important;
+  border-top: 3px solid $brand-primary !important;
+  border-right: 1px solid $brand-border !important;
+  border-bottom: 1px solid $brand-border !important;
+  border-left: 1px solid $brand-border !important;
+  border-radius: 0px !important;
+  padding: 32px !important;
+  margin-bottom: 24px;
+}
+
+/* Badges & Status Indicators */
+.brand-badge {
+  display: inline-block;
+  background: #0D0D0D;
+  color: $brand-primary;
+  border: 1px solid $brand-primary;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 4px 10px;
+  border-radius: 2px;
+  margin-bottom: 12px;
+}
+
+/* Masthead / Navigation Overrides */
+.masthead {
+  background-color: $brand-bg !important;
+  border-bottom: 1px solid $brand-border !important;
+}
+
+.masthead__menu-item {
+  color: #B6B6B6 !important;
+  font-weight: 600;
+  font-size: 14px;
+  &:hover {
+    color: $brand-primary !important;
+  }
+}
+
+/* Sidebar Profile Overrides */
+.sidebar {
+  background: transparent !important;
+}
+
+.author__avatar img {
+  border-radius: 2px !important;
+  border: 2px solid $brand-primary !important;
+}
+
+.author__name {
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+}
+
+.author__bio {
+  color: $brand-text-muted !important;
+}
+
+.author__urls a {
+  color: $brand-text-muted !important;
+  &:hover {
+    color: $brand-primary !important;
+  }
+}
+
+/* Footer Overrides */
+.page__footer {
+  background-color: $brand-bg !important;
+  border-top: 1px solid $brand-border !important;
+  color: $brand-text-muted !important;
+}
+
+/* Flex Grid System */
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin: 24px 0;
+}

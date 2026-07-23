@@ -1,12 +1,30 @@
 ---
 layout: archive
-title: "Teaching"
+title: "Teaching & Mentorship"
 permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
+<div style="padding: 10px 0;">
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+  <div style="margin-bottom: 32px;">
+    <span class="brand-label">EDUCATION & COURSES</span>
+    <h1 style="font-size: 42px; font-weight: 800; color: #FFFFFF; margin-bottom: 16px;">Teaching & Courses</h1>
+    <p style="color: #A0A0A0; font-size: 15px;">
+      Courses, guest lectures, and student mentorship at IIT Indore in quantum information, quantum cryptography, and fundamental physics.
+    </p>
+  </div>
+
+  {% for post in site.teaching reversed %}
+    <div class="brand-card">
+      <h3 style="font-size: 18px; color: #FFFFFF; margin-bottom: 8px;"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      {% if post.type %}
+        <span style="font-size: 12px; color: #BFF549; font-weight: 600; text-transform: uppercase;">{{ post.type }}</span>
+      {% endif %}
+      {% if post.venue %}
+        <p style="font-size: 13px; color: #A0A0A0; margin: 4px 0;"><strong>Institution:</strong> {{ post.venue }}</p>
+      {% endif %}
+    </div>
+  {% endfor %}
+
+</div>
