@@ -36,7 +36,7 @@ author_profile: true
         </p>
         <div style="display: flex; gap: 12px; flex-wrap: wrap;">
           <a href="mailto:shashankg@iiti.ac.in" class="raw-btn-lime" style="font-size: 12px; padding: 8px 14px;">shashankg@iiti.ac.in</a>
-          <a href="/" class="raw-btn-dark" style="font-size: 12px; padding: 8px 14px;">Research Profile ↗</a>
+          <a href="https://scholar.google.com/citations?user=4dn4lHGbFzAC&hl=en" target="_blank" class="raw-btn-dark" style="font-size: 12px; padding: 8px 14px;">Google Scholar Profile ↗</a>
         </div>
       </div>
     </div>
