@@ -62,7 +62,7 @@ excerpt: "Dr. Shashank Gupta | Quantum Information, Cryptography & Post-Quantum 
 
     <div class="raw-card-luxury">
       <span class="raw-mono-label">INTELLECTUAL PROPERTY</span>
-      <div style="font-family: 'Syne', sans-serif; font-size: 42px; font-weight: 800; color: #FFFFFF; margin: 8px 0;">4 GRANTED</div>
+      <div style="font-family: 'Syne', sans-serif; font-size: 28px; font-weight: 800; color: #FFFFFF; margin: 8px 0; word-break: break-word;">4 GRANTED</div>
       <p style="font-size: 13px; color: #7A7F96; margin: 0;">Commercial QKD & RNG patents granted + 2 additional under examination.</p>
     </div>
 
@@ -87,7 +87,7 @@ excerpt: "Dr. Shashank Gupta | Quantum Information, Cryptography & Post-Quantum 
 
       <div class="raw-card-highlight">
         <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
-          <span class="raw-mono-label" style="background: #060608; border: 1px solid #BFF549; padding: 4px 8px;">GRANT • INR 72 LAKHS</span>
+          <span class="raw-mono-label" style="background: #060608; border: 1px solid #BFF549; padding: 4px 8px;">GRANT • INR 71.79 LAKHS</span>
           <span style="font-family: 'JetBrains Mono'; font-size: 12px; color: #BFF549; font-weight: 700;">2026 – 2029</span>
         </div>
         <h3 style="font-size: 20px; color: #FFFFFF; margin-bottom: 8px;">PRIME MINISTER EARLY CAREER RESEARCH GRANT SCHEME</h3>
@@ -369,7 +369,7 @@ excerpt: "Dr. Shashank Gupta | Quantum Information, Cryptography & Post-Quantum 
 
   <!-- Institutional Footer -->
   <div style="text-align: center; padding: 48px 0; border-top: 1px solid #1E1E28;">
-    <img src="/images/sha_iiti.png" alt="Dr. Shashank Gupta" style="height: 120px; width: 120px; object-fit: cover; border-radius: 4px; border: 2px solid #BFF549; margin-bottom: 16px;">
+    <img src="{{ '/images/sha_iiti.png' | relative_url }}" alt="Dr. Shashank Gupta" style="height: 120px; width: 120px; object-fit: cover; border-radius: 4px; border: 2px solid #BFF549; margin-bottom: 16px;">
     <p style="font-size: 15px; color: #FFFFFF; font-weight: 700; margin: 0 0 4px 0;">Dr. Shashank Gupta</p>
     <p style="font-size: 13px; color: #7A7F96; margin: 0;">
       Centre for Quantum Computing | Department of Physics<br>

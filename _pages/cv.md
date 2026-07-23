@@ -68,7 +68,7 @@ redirect_from:
         <span class="brand-badge">JAN 2026</span>
         <h3 style="font-size: 20px; color: #FFFFFF; margin-bottom: 8px;">PM Early Career Research Grant (ANRF) &amp; YFRSG-PRIUS Awarded</h3>
         <p style="font-size: 14px; color: #A0A0A0; margin: 0; line-height: 1.6;">
-          Awarded the Anusandhan National Research Foundation (ANRF) Prime Minister Early Career Research Grant (₹72 Lakhs, 2026–2029) and IIT Indore YFRSG-DREAM-PRIUS Grant (₹20 Lakhs, 2026–2028) for advancing quantum communication architectures.
+          Awarded the Anusandhan National Research Foundation (ANRF) Prime Minister Early Career Research Grant (₹71.79 Lakhs, 2026–2029) and IIT Indore YFRSG-DREAM-PRIUS Grant (₹20 Lakhs, 2026–2028) for advancing quantum communication architectures.
         </p>
       </div>
 
@@ -110,7 +110,7 @@ redirect_from:
       <span class="brand-badge">RECRUITING</span>
       <h3 style="font-size: 18px; color: #FFFFFF; margin-bottom: 8px;">PhD Students &amp; Research Interns</h3>
       <p style="font-size: 14px; color: #A0A0A0; margin: 0;">
-        Qurious Labs is actively recruiting PhD scholars and research fellows passionate about device-independent quantum information, multipartite correlations, and post-quantum cryptography. Write to <a href="mailto:shashank@iiti.ac.in" style="color: #BFF549;">shashank@iiti.ac.in</a>.
+        Qurious Labs is actively recruiting PhD scholars and research fellows passionate about device-independent quantum information, multipartite correlations, and post-quantum cryptography. Write to <a href="mailto:shashankg@iiti.ac.in" style="color: #BFF549;">shashankg@iiti.ac.in</a>.
       </p>
     </div>
   </div>

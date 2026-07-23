@@ -21,7 +21,7 @@ author_profile: true
     <h2 style="font-size: 22px; color: #FFFFFF; margin-bottom: 24px; border-bottom: 1px solid #252525; padding-bottom: 8px;">Principal Investigator</h2>
 
     <div class="brand-grant-card" style="display: flex; gap: 28px; align-items: flex-start; flex-wrap: wrap;">
-      <img src="/images/sha_iiti.png" alt="Dr. Shashank Gupta"
+      <img src="{{ '/images/sha_iiti.png' | relative_url }}" alt="Dr. Shashank Gupta"
         style="width: 150px; height: 150px; object-fit: cover; object-position: top; border-radius: 4px; border: 2px solid #BFF549; flex-shrink: 0;">
       <div style="flex: 1; min-width: 240px;">
         <span class="brand-badge">PRINCIPAL INVESTIGATOR</span>
@@ -34,7 +34,7 @@ author_profile: true
           Specializing in Device-Independent Quantum Information, Quantum Key Distribution (QKD), Multi-party Quantum Computation, and Quantum Optimization.
         </p>
         <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-          <a href="mailto:shashank@iiti.ac.in" class="raw-btn-lime" style="font-size: 12px; padding: 8px 14px;">shashank@iiti.ac.in</a>
+          <a href="mailto:shashankg@iiti.ac.in" class="raw-btn-lime" style="font-size: 12px; padding: 8px 14px;">shashankg@iiti.ac.in</a>
           <a href="/" class="raw-btn-dark" style="font-size: 12px; padding: 8px 14px;">Research Profile ↗</a>
         </div>
       </div>
@@ -108,7 +108,7 @@ author_profile: true
     <p style="color: #A0A0A0; font-size: 15px; max-width: 520px; margin: 0 auto 24px auto; line-height: 1.6;">
       Motivated PhD students and research interns passionate about quantum cryptography, device-independent protocols, and post-quantum security are encouraged to reach out.
     </p>
-    <a href="mailto:shashank@iiti.ac.in" class="raw-btn-lime">Get in Touch ↗</a>
+    <a href="mailto:shashankg@iiti.ac.in" class="raw-btn-lime">Get in Touch ↗</a>
   </div>
 
 </div>

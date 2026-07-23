@@ -212,6 +212,21 @@ a {
   }
 }
 
+/* Card & Badge Overflow Safeguards */
+.brand-badge, .raw-mono-label {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  white-space: normal !important;
+}
+
+.brand-grant-card, .raw-card-luxury, .raw-card-highlight, .brand-card {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
 /* Masthead Centrally Aligned & Symmetric Overrides */
 .masthead {
   position: fixed !important;
