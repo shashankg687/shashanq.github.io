@@ -4,6 +4,7 @@ title: "Members"
 permalink: /members/
 author_profile: true
 ---
+{% include base_path %}
 
 <div style="padding: 10px 0;">
 
@@ -21,7 +22,7 @@ author_profile: true
     <h2 style="font-size: 22px; color: #FFFFFF; margin-bottom: 24px; border-bottom: 1px solid #252525; padding-bottom: 8px;">Principal Investigator</h2>
 
     <div class="brand-grant-card" style="display: flex; gap: 28px; align-items: flex-start; flex-wrap: wrap;">
-      <img src="{{ '/images/sha_iiti.png' | relative_url }}" alt="Dr. Shashank Gupta"
+      <img src="{{ base_path }}/images/sha_iiti.png" alt="Dr. Shashank Gupta"
         style="width: 150px; height: 150px; object-fit: cover; object-position: top; border-radius: 4px; border: 2px solid #BFF549; flex-shrink: 0;">
       <div style="flex: 1; min-width: 240px;">
         <span class="brand-badge">PRINCIPAL INVESTIGATOR</span>

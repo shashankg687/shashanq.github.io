@@ -5,7 +5,7 @@ author_profile: true
 header:
   overlay_filter: 0.95
 excerpt: "Dr. Shashank Gupta | Quantum Information, Cryptography & Post-Quantum Security at IIT Indore."
----
+{% include base_path %}
 
 <div style="padding: 10px 0;">
 
@@ -369,7 +369,7 @@ excerpt: "Dr. Shashank Gupta | Quantum Information, Cryptography & Post-Quantum 
 
   <!-- Institutional Footer -->
   <div style="text-align: center; padding: 48px 0; border-top: 1px solid #1E1E28;">
-    <img src="{{ '/images/sha_iiti.png' | relative_url }}" alt="Dr. Shashank Gupta" style="height: 120px; width: 120px; object-fit: cover; border-radius: 4px; border: 2px solid #BFF549; margin-bottom: 16px;">
+    <img src="{{ base_path }}/images/sha_iiti.png" alt="Dr. Shashank Gupta" style="height: 120px; width: 120px; object-fit: cover; border-radius: 4px; border: 2px solid #BFF549; margin-bottom: 16px;">
     <p style="font-size: 15px; color: #FFFFFF; font-weight: 700; margin: 0 0 4px 0;">Dr. Shashank Gupta</p>
     <p style="font-size: 13px; color: #7A7F96; margin: 0;">
       Centre for Quantum Computing | Department of Physics<br>
